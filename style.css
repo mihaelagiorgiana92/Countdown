@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    font-family: 'Festive';
+    font-family: 'Festive',sans-serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -13,16 +14,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content:left; 
+    justify-content:center; 
     align-items: center;
+    text-align: center;
 }
+
 
 .countdowncontainer {
     color: rgb(138, 25, 10);
-    font-family: 'Festive';
-    padding: 30px;
+    font-family: 'Festive',sans-serif;
+    padding: 2rem;
     border-radius: 6px;
     position: absolute;
+    text-align: center;
    
 }
 /* make the counter blink */
@@ -36,21 +40,21 @@ body {
 .christmas {
     font-size: 5rem;
     text-transform: capitalize;
-    margin-bottom: 20px; 
+    margin-bottom: 1.5rem; 
   
 }
 
 .counter {
     display: flex;
-    justify-content: flex-start;
-    font-size: 4rem;
+    justify-content: space-evenly;
+    font-size: 3rem;
     width: 100%;
     table-layout: fixed;
    
 }
 
 .counter td {
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
    
 }
@@ -65,11 +69,33 @@ body {
         font-size:16px;
         margin:15px;
     }
+    .christmas{
+        font-size: 3rem;
+    }
+    .counter{
+        font-size: 2.5rem;
+    }
+    .countdowncontainer{
+        padding: 1.5rem;
+    }
 }
 
 @media(max-width:480px){
     body{
         font-size: 14px;
         margin: 10px;
+    }
+
+    .christmas{
+        font-size:2rem;
+        flex-direction: column;
+    }
+    .counter td{
+        padding:0.5rem;
+
+    }
+
+    .countdowncontainer{
+        padding: 1rem;
     }
 }

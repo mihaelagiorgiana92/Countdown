@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content:center; 
+    justify-content:left; 
     align-items: center;
     text-align: center;
 }
@@ -41,6 +41,9 @@ body {
     font-size: 5rem;
     text-transform: capitalize;
     margin-bottom: 1.5rem; 
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
   
 }
 
@@ -88,7 +91,9 @@ body {
 
     .christmas{
         font-size:2rem;
-        flex-direction: column;
+        /* display: grid;
+        place-items: center left; */
+        /*  */
     }
     .counter td{
         padding:0.5rem;

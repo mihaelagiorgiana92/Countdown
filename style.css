@@ -66,40 +66,87 @@ body {
     animation-iteration-count: infinite;
 }
 
-@media (max-width:768px){
-    body{
-        font-size:16px;
-        margin:15px;
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width: 320px) {
+    .container {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
     }
-    .christmas{
-        font-size: 3rem;
+
+    .countdowncontainer {
+        font-size: 1.2rem; /* Scale font size for smaller screens */
+        padding: 1rem;
     }
-    .counter{
-        font-size: 2.5rem;
+
+    .christmas {
+        font-size: 3rem; /* Adjust header size */
     }
-    .countdowncontainer{
-        padding: 1.5rem;
+
+    .counter {
+        font-size: 2rem; /* Adjust counter size */
     }
 }
 
-@media(max-width:480px){
-    body{
-        font-size: 14px;
-        margin: 10px;
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 480px) {
+    .countdowncontainer {
+        font-size: 1.5rem;
     }
 
-    .christmas{
-        font-size:2rem;
-        /* display: grid;
-        place-items: center left; */
-        /*  */
-    }
-    .counter td{
-        padding:0.5rem;
-
+    .christmas {
+        font-size: 3.5rem;
     }
 
-    .countdowncontainer{
-        padding: 1rem;
+    .counter {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    .countdowncontainer {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+
+    .christmas {
+        font-size: 4rem;
+    }
+
+    .counter {
+        font-size: 3rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    .countdowncontainer {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .christmas {
+        font-size: 4.5rem;
+    }
+
+    .counter {
+        font-size: 3.5rem;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+    .countdowncontainer {
+        font-size: 2.2rem;
+        padding: 2.5rem;
+    }
+
+    .christmas {
+        font-size: 5rem;
+    }
+
+    .counter {
+        font-size: 4rem;
     }
 }

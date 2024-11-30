@@ -14,9 +14,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content:left; 
     align-items: center;
-    text-align: center;
+    justify-content: left;
 }
 
 

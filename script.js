@@ -1,6 +1,6 @@
 function countdown() {
     let now = new Date();
-    let evenDate = new Date(2024, 11, 25);
+    let evenDate = new Date(2025, 11, 25);
   
     let actualTime = now.getTime();
     let eventTime = evenDate.getTime();
